@@ -33,7 +33,6 @@ public class singleNumber {
         for(int i=0;i<nums.length;i++){
             res^=nums[i];
         }
-
         return res;
     }
 }
