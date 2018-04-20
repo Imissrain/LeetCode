@@ -13,7 +13,7 @@ import java.util.Map;
  * */
 @SuppressWarnings("all")
 public class singleNumber {
-    public int singleNumber(int[] nums) {
+    public int singleNumber1(int[] nums) {
         Map<Integer,Integer>map=new HashMap<>();
         for(int i=0;i<nums.length;i++){
             if(map.containsKey(nums[i])){
@@ -27,5 +27,12 @@ public class singleNumber {
                 return entry.getKey();
         }
         return 0;
+    }
+    public int singleNumber(int[] nums) {
+        int res=0;
+        for(int i=0;i<nums.length;i++){
+            res^=nums[i];
+        }
+        return res;
     }
 }
