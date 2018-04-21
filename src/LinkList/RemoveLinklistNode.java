@@ -11,7 +11,7 @@ public class RemoveLinklistNode {
         ListNode next;
         ListNode(int x) { val = x; }
     }
-    //复制下一个机会节点 然后删除下一个节点
+    //复制下一个节点 然后删除下一个节点
     public void deleteNode(ListNode node) {
         if(node.next==null)
             return;
