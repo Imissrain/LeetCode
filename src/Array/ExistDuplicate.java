@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,6 +13,7 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class ExistDuplicate {
     public boolean containsDuplicate(int[] nums) {
+        //传统的HashMap解决
         HashMap<Integer,Integer> map=new HashMap();
         for(int i=0;i<nums.length;i++){
             if(map.containsKey(nums[i])){
@@ -23,6 +25,17 @@ public class ExistDuplicate {
         for(Map.Entry<Integer,Integer> entry:map.entrySet()){
             if(entry.getValue()>1)
                 return true;
+        }
+        return false;
+    }
+    //先排序再前后相比
+    public boolean containsDuplicate1(int[] nums) {
+        Arrays.sort(nums);
+
+        for (int i = 0; i < nums.length - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
+                return true;
+            }
         }
         return false;
     }
