@@ -13,6 +13,7 @@ import java.util.Map;
  * */
 @SuppressWarnings("all")
 public class singleNumber {
+    //HashMap
     public int singleNumber1(int[] nums) {
         Map<Integer,Integer>map=new HashMap<>();
         for(int i=0;i<nums.length;i++){
@@ -28,6 +29,7 @@ public class singleNumber {
         }
         return 0;
     }
+    //位运算
     public int singleNumber(int[] nums) {
         int res=0;
         for(int i=0;i<nums.length;i++){
