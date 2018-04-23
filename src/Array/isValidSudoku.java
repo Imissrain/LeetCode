@@ -77,6 +77,7 @@ public class isValidSudoku {
                 }
             }
         }
+
         //判断九宫格  一行一行走
         for(int i=0;i<9;i+=3){
             for(int j=0;j<9;j+=3){
