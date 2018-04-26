@@ -31,6 +31,7 @@ public class plusOne {
                return digits;
            }
        }
+
        int res[]=new int[digits.length+1];
        res[0]=1;
        return res;
