@@ -54,6 +54,7 @@ public class twoSum {
                 map.put(nums[i],i);
             }
         }
+
         return result;
     }
 }
