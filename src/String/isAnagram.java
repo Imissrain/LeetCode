@@ -34,4 +34,19 @@ public class isAnagram {
         }
         return true;
     }
+    //榜首的方法总是很机智  类似桶排序的思想
+    public boolean isAnagram1(String s, String t) {
+        if (s.length() != t.length()) return false;
+        int[] table = new int[26];
+        for (char str : s.toCharArray()) {
+            table[str - 'a']++;
+        }
+        //遍历tstring 如果有某个位置小于0 就说明他俩不是同构的
+
+        for (char str : t.toCharArray()) {
+            if (--table[str - 'a'] < 0) return false;
+        }
+        return true;
+    }
+
 }
