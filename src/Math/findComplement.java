@@ -32,7 +32,7 @@ public class findComplement {
                 res+=Math.pow(2,index);
 
             }
-            index++;
+            index++;//每次都要加
             num/=2;
         }
         return res;
