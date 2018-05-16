@@ -26,6 +26,7 @@ public class deleteDuplicates {
         ListNode fakenode=new ListNode(0);
         fakenode.next=head;
         while(head.next!=null){
+
             if(head.val==head.next.val){//当前和下一个的节点的值相等 越过指向下一个 否则当前节点后移
                 head.next=head.next.next;
             }else {
