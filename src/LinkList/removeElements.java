@@ -36,6 +36,7 @@ public class removeElements {
         }
         return fakenode.next;
     }
+
     //fakenode=cur cur.next.val==val 删除 否则cur=cur.next
     //版本2
     public ListNode removeElements1(ListNode head, int val) {
