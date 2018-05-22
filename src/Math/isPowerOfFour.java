@@ -13,7 +13,7 @@ public class isPowerOfFour {
         //如果一个数减1是3的倍数同时还是2的幂 则这个数字是4的幂
         if(num<0)
             return false;
-       return (num-1)%3==0&&Integer.toBinaryString(num).indexOf('1')==Integer.toBinaryString(num).lastIndexOf('1');;
+       return (num-1)%3==0&&Integer.toBinaryString(num).indexOf('1')==Integer.toBinaryString(num).lastIndexOf('1');
     }
 
     public static void main(String[] args) {
