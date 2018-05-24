@@ -21,17 +21,22 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class singleNumber {
     public int[] singleNumber(int[] nums) {
-        Map<Integer,Integer> map=new HashMap<>();
+        //hashmap暴力 这里用了Long
+        Map<Integer,Long> map=new HashMap<>();
         for(int i=0;i<nums.length;i++){
-            Integer integer = map.get(nums[i]);
-            map.put(nums[i],integer==null?nums[i]:map.get(nums[i])+1);
+            Long aLong = map.get(nums[i]);
+            map.put(nums[i],aLong==null?1L:map.get(nums[i])+1L);
         }
         int []res=new int[2];
-        int index=0;
         for(Map.Entry entry:map.entrySet()){
-            if((int)entry.getValue()==1){
-                res[index++]=(int)entry.getKey();
+            if(entry.getValue().equals(1L)){
+                if (res[0] == 0) {
+                    res[0] = (int) entry.getKey();
+                } else {
+                    res[1] = (int) entry.getKey();
+                }
             }
+
         }
         return res;
     }
