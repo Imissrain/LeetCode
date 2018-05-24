@@ -21,7 +21,7 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class singleNumber {
     public int[] singleNumber(int[] nums) {
-        //hashmap暴力 这里用了Long
+        //hashmap暴力 这里用了Long来保存出现的次数 后面equals和1L比较
         Map<Integer,Long> map=new HashMap<>();
         for(int i=0;i<nums.length;i++){
             Long aLong = map.get(nums[i]);
