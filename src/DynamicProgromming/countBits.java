@@ -19,7 +19,7 @@ import java.util.List;
  * */
 @SuppressWarnings("all")
 public class countBits {
-    //n&=(n-1) 计算有多少个二进制1
+    //n&=(n-1) 计算有多少个二进制1  n&(n-1)作用：将n的二进制表示中的最低位为1的改为0 看能进行几次这样的操作 就有几个1
 
     public int[] countBits(int num) {
         List<Integer> integerList=new ArrayList<>();
