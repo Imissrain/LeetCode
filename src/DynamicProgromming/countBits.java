@@ -20,6 +20,7 @@ import java.util.List;
 @SuppressWarnings("all")
 public class countBits {
     //n&=(n-1) 计算有多少个二进制1
+
     public int[] countBits(int num) {
         List<Integer> integerList=new ArrayList<>();
         for(int i=0;i<=num;i++){
