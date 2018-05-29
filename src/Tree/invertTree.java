@@ -30,7 +30,6 @@ public class invertTree {
         TreeNode(int x) { val = x; }
     }
     //左右子树同不为空 交换左右子树 然后递归的交换左子树和右子树 最后将root返回
-
     public TreeNode invertTree(TreeNode root) {
         if(root==null)
             return null;
