@@ -25,7 +25,6 @@ import java.util.List;
 public class findDisappearedNumbers {
     public static List<Integer> findDisappearedNumbers(int[] nums) {
         //桶思想 先填满数组 然后找为0的下标返回
-
         if(nums.length==0)
             return new ArrayList<>();
         List<Integer>list=new ArrayList<>();
