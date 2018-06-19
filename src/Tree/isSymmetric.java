@@ -40,6 +40,7 @@ public class isSymmetric {
         //一边不为空 返回false
         if(left==null || right==null)
             return false;
+
         //否则 比较左子树的左子树和右子树的右子树 左子树的右子树和右子树的左子树
         if(left.val==right.val){
             return checkNode(left.left,right.right)&&checkNode(left.right,right.left);
