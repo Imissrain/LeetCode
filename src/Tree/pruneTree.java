@@ -42,7 +42,14 @@ public class pruneTree {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
+    //递归解决 左右都为空并且当前值为0 返回null 否则向上递归
     public TreeNode pruneTree(TreeNode root) {
-        return null;
+        if(root==null)
+            return null;
+        root.left=pruneTree(root.left);
+        root.right=pruneTree(root.right);
+        if(root.left==null&&root.right==null&&root.val==0)
+            return null;
+        return root;
     }
 }
