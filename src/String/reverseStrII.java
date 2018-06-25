@@ -24,6 +24,19 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class reverseStrII {
     public String reverseStr(String s, int k) {
-        return null;
+        //小于k直接反转 然后每次截取2k个长度进行操作 操作完成后 字符串每次截断2k长度 当长度小于2k时 反转前k即可
+        if(s.length()<k)//小于k直接反转
+            return new StringBuffer(s).reverse().toString();
+        else if(s.length()<=2*k){//小于等于2k 反转前k加s.length-1
+            return new StringBuffer(s.substring(0,k)).reverse().toString()+s.substring(k);
+        }else {
+            String ans="";
+            while(s.length()>2*k){
+                ans+=reverseStr(s.substring(0,2*k),k);
+                s=s.substring(2*k);
+            }
+            ans+=reverseStr(s,k);
+            return ans;
+        }
     }
 }
