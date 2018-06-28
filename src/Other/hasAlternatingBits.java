@@ -43,6 +43,7 @@ public class hasAlternatingBits {
         }
         return flag;
     }
+
     //位运算
     public static boolean hasAlternatingBits1(int n) {
         int before=n%2;
