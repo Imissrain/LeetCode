@@ -21,7 +21,7 @@ import org.junit.Test;
 public class shortestToChar {
     public static int[] shortestToChar(String S, char C) {
         //正反两次遍历 每次记录C的位置 第一次遍历如果等于C flag记录C的最新下标  arr[i]就等于当前下标减去flag
-        // 所以flag初始化一个负无穷的值 第二次遍历 flag设置无穷大的值 和当前的arr[i]做比较 取最小
+        //所以flag初始化一个负无穷的值 第二次遍历 flag设置无穷大的值 和当前的arr[i]做比较 取最小
         int arr[]=new int[S.length()];
         int flag=-9999999;
         for(int i=0;i<S.length();i++){
