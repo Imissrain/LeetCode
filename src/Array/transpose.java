@@ -31,6 +31,7 @@ public class transpose {
             }
             return A;
         }
+
         //如果行列不等 申请新数组 行列重新调换 将其重新反转即可
         else {
             int B[][]=new int[A[0].length][A.length];
