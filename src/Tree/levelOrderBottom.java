@@ -34,7 +34,7 @@ public class levelOrderBottom {
         TreeNode(int x) { val = x; }
     }
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        //层序结果
+        //层序
         if(root==null)
             return new ArrayList<>();
         List <List<Integer>> lists=new ArrayList<List<Integer>>();
