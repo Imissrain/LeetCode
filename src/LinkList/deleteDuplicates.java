@@ -1,4 +1,7 @@
 package LinkList;
+
+import java.util.TreeSet;
+
 /**
  * 83. 删除排序链表中的重复元素
  * 题目描述提示帮助提交记录社区讨论阅读解答
@@ -20,6 +23,26 @@ public class deleteDuplicates {
         ListNode next;
         ListNode(int x) { val = x; }
     }
+    //treeset实现
+    public ListNode deleteDuplicates1(ListNode head) {
+        if(head==null || head.next==null)
+            return head;
+        ListNode fakenode=new ListNode(0);
+        ListNode Cur=fakenode;
+        TreeSet<Integer> treeSet=new TreeSet<>();
+        while(head!=null){
+            treeSet.add(head.val);
+            head=head.next;
+        }
+        int size=treeSet.size();
+        for(int i=0;i<size;i++){
+            ListNode listNode=new ListNode(treeSet.pollFirst());
+            Cur.next=listNode;
+            Cur=Cur.next;
+        }
+        return fakenode.next;
+    }
+    //普通实现
     public ListNode deleteDuplicates(ListNode head) {
         if(head==null)
             return head;
