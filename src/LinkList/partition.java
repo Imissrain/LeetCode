@@ -48,8 +48,4 @@ public class partition {
         plittle.next=big.next;
         return little.next;
     }
-    @Test
-    public void fun(){
-
-    }
 }
