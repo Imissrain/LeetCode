@@ -47,7 +47,7 @@ public class reverseBetween {
             }
         }
 //        System.out.println(Arrays.toString(arrayList.toArray()));
-        System.out.println(Arrays.toString(stack.toArray()));
+//        System.out.println(Arrays.toString(stack.toArray()));
         int count=1;
         ListNode head1=head;
         while(head1!=null&&!stack.isEmpty()){
