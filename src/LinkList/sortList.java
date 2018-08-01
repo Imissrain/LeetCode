@@ -59,7 +59,7 @@ public class sortList {
             return head;
         ListNode middle=getMiddleNode(head);
         ListNode next=middle.next;
-        middle.next=null;//分开
+        middle.next=null;//将链表分开
         return mergeList(sortList(head),sortList(next));
     }
 
