@@ -24,6 +24,5 @@ public class reorderList {
     }
     public void reorderList(ListNode head) {
 
-
     }
 }
