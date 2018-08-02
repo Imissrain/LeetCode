@@ -1,5 +1,7 @@
 package LinkList;
 
+import java.util.*;
+
 /**
  * 143. 重排链表
  * 题目描述提示帮助提交记录社区讨论阅读解答
@@ -23,6 +25,40 @@ public class reorderList {
         ListNode(int x) { val = x; }
     }
     public void reorderList(ListNode head) {
+        //如果暴力不是为切题，那将毫无意义 算长度 将值存进数组 head不为空的情况下顺序放一个 倒序放一个
+        if(head==null || head.next==null)
+            return;
+        ListNode phead=head;
+        int count=0;
+        while(phead!=null){
+            count++;
+            phead=phead.next;
+        }
+        System.out.println(count);
+        int []arr=new int[count];
+        phead=head;
+        int index=0;
+        while(phead!=null){
+            arr[index]=phead.val;
+            index++;
+            phead=phead.next;
+        }
+        phead=head;
+        for(int i=0,j=arr.length-1;i<arr.length&&j>=0&&phead!=null;){
+            System.out.println(arr[i]);
+            phead.val=arr[i];
+            phead=phead.next;
+            i++;
+            System.out.println(arr[j]);
+            phead.val=arr[j];
+            phead=phead.next;
+            j--;
+            if(i==j){
+                phead.val=arr[i];
+                break;
+            }
 
+        }
+        return;
     }
 }
