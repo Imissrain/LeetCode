@@ -1,5 +1,10 @@
 package LinkList;
 
+import org.junit.Test;
+
+import java.util.Comparator;
+import java.util.Date;
+
 /**
  * 109. 有序链表转换二叉搜索树
  * 题目描述提示帮助提交记录社区讨论阅读解答
@@ -33,6 +38,15 @@ public class sortedListToBST {
         TreeNode(int x) { val = x; }
     }
     public TreeNode sortedListToBST(ListNode head) {
+
         return null;
     }
+    @Test
+    public void fun(){
+        String s="abc";
+        String s2="aad";
+
+        System.out.println(s.compareTo(s2));
+    }
+
 }
