@@ -1,9 +1,9 @@
 package LinkList;
 
 import org.junit.Test;
+import org.omg.CORBA.OBJ_ADAPTER;
 
-import java.util.Comparator;
-import java.util.Date;
+import java.util.*;
 
 /**
  * 109. 有序链表转换二叉搜索树
@@ -38,15 +38,22 @@ public class sortedListToBST {
         TreeNode(int x) { val = x; }
     }
     public TreeNode sortedListToBST(ListNode head) {
-
-        return null;
+        return buildBinarySearchTree(head,null);
     }
-    @Test
-    public void fun(){
-        String s="abc";
-        String s2="aad";
-
-        System.out.println(s.compareTo(s2));
+    public TreeNode buildBinarySearchTree(ListNode start,ListNode end){
+        //二叉搜索树的左右子树高度差绝对值不能大于1 所以根节点一定是链表的中间节点 先找根节点 然后左边右边分别递归即可
+        if(start==end)
+            return null;
+        ListNode slow=start;
+        ListNode fast=start;
+        while(fast!=end && fast.next!=end){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        TreeNode node =new TreeNode(slow.val);
+        node.left=buildBinarySearchTree(start,slow);
+        node.right=buildBinarySearchTree(slow.next,end);
+        return node;
     }
 
 }
