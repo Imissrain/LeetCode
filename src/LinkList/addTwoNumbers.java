@@ -27,7 +27,8 @@ public class addTwoNumbers {
         ListNode(int x) { val = x; }
     }
     public  ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        //将暴力进行到底 思路:两个链表先转成数组 然后从尾到头模拟相加 每次使用一个add来模拟进位 在一个数组走完的时候 注意弥上原来的 弥的时候也要注意进位 最后当进位等于1时 申请新数组最高位置1 剩下的部分复制进去
+        //将暴力进行到底 思路:两个链表先转成数组 然后从尾到头模拟相加 每次使用一个add来模拟进位
+        // 在一个数组走完的时候 注意弥上原来的 弥的时候也要注意进位 最后当进位等于1时 申请新数组最高位置1 剩下的部分复制进去
         if(l1==null && l2!=null)
             return l2;
         if(l1!=null &&l2==null)
