@@ -7,6 +7,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 25. k个一组翻转链表
@@ -36,18 +37,23 @@ public class reverseKGroup {
         ListNode(int x) { val = x; }
     }
     public ListNode reverseKGroup(ListNode head, int k) {
-        if(k==0 || head==null)
-            return head;
-        int count=0;
-        ListNode fakenode=new ListNode(0);
-        fakenode.next=head;
-        ListNode phead=head;
-        while(phead!=null){
-            phead=phead.next;
-            count++;
+        Stack<ListNode> stack=new Stack<>();
+        ListNode tmp=head;
+        for(int i=0;i<k;i++){
+            if(head!=null){
+                stack.push(head);
+            }else {
+                return tmp;
+            }
+            head=head.next;
         }
-        if(k>count)
-            return head;
-        return fakenode.next;
+        ListNode first=stack.pop();
+        ListNode res=first;
+        for(int i=0;i<k-1;i++){
+            first.next=stack.pop();
+            first=first.next;
+        }
+        first.next=reverseKGroup(head,k);
+        return res;
     }
 }
