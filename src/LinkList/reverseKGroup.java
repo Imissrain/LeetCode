@@ -37,6 +37,7 @@ public class reverseKGroup {
         ListNode(int x) { val = x; }
     }
     public ListNode reverseKGroup(ListNode head, int k) {
+        //使用stack每次存储k个节点 然后弹出一个作为第一个 剩下的依次弹出 当节点小于k 直接return 否则继续递归
         Stack<ListNode> stack=new Stack<>();
         ListNode tmp=head;
         for(int i=0;i<k;i++){
