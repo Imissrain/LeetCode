@@ -11,10 +11,11 @@ package Other;
 @SuppressWarnings("all")
 public class hammingDistance {
     public int hammingDistance(int x, int y) {
-        //nteger.toBinaryString(x^y).replaceAll("0","").length();
+        //
+        //Integer.toBinaryString(x^y).replaceAll("0","").length();
 //        return Integer.toBinaryString(x^y).replaceAll("0","").length();
 
-        //Integer.bitCount(x^y);
+//        Integer.bitCount(x^y);
 //        return Integer.bitCount(x^y);
 
         //n&=(n-1)
