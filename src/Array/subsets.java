@@ -27,7 +27,8 @@ import java.util.List;
 @SuppressWarnings("all")
 public class subsets {
     public List<List<Integer>> subsets(int[] nums) {
-        
+
+
         return null;
     }
 }
