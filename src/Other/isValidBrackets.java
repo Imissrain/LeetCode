@@ -69,6 +69,27 @@ public class isValidBrackets {
         return stack.isEmpty();
     }
 
+    public static boolean isValid1(String s){
+        Stack<Character> stack=new Stack<>();
+        for(int i=0;i<s.length();i++){
+            char top=s.charAt(i);
+            if(top=='('||top=='['||top=='{')
+                stack.push(top);
+            else {
+                if(stack.empty())
+                    return false;
+                char topp=stack.pop();
+                if(top==')'&&topp!='(')
+                    return false;
+                if(top==']'&&topp!='[')
+                    return false;
+                if(top=='}'&&topp!='{')
+                    return false;
+                }
+            }
+            return stack.isEmpty();
+        }
+
     public static void main(String[] args) {
         String s="){";
         System.out.println(isValid(s));
