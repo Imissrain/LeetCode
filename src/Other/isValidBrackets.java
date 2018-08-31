@@ -1,5 +1,9 @@
 package Other;
 
+import sun.applet.AppletClassLoader;
+import sun.misc.Launcher;
+
+import java.net.URLClassLoader;
 import java.util.Stack;
 
 /**
@@ -92,7 +96,6 @@ public class isValidBrackets {
         }
 
     public static void main(String[] args) {
-        String s="){";
-        System.out.println(isValid(s));
+        System.out.println(isValidBrackets.class.getClassLoader());
     }
 }
