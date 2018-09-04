@@ -1,4 +1,4 @@
-package Stack;
+package Tree;
 
 import org.junit.Test;
 
