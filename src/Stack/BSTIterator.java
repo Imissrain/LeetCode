@@ -13,7 +13,7 @@ import java.util.Stack;
  * @author gkyan
  */
 
-
+@SuppressWarnings("all")
 public class BSTIterator {
     public class TreeNode {
         int val;
