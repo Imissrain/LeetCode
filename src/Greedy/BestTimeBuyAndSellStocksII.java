@@ -1,4 +1,4 @@
-package Array;
+package Greedy;
 /**
  * 买卖股票的最佳时机 II
  * 给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
@@ -26,7 +26,7 @@ package Array;
  * 输出: 0
  * 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。*/
 @SuppressWarnings("all")
-public class BestTimeBuyAndSellStocks {
+public class BestTimeBuyAndSellStocksII {
     public int maxProfit(int[] prices) {
         if(prices.length==0)
             return 0;
