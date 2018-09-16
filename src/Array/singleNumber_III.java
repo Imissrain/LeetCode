@@ -37,7 +37,6 @@ public class singleNumber_III {
         }
         return 0;
     }
-
     public static void main(String[] args) {
         int []nums={2,2,2,3};
         System.out.println(singleNumber(nums));
