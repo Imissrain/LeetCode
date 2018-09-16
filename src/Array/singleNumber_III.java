@@ -1,44 +1,47 @@
 package Array;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.junit.Test;
 
 /**
- * 137. 只出现一次的数字 II
- * 题目描述提示帮助提交记录社区讨论阅读解答
- * 给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现了三次。找出那个只出现了一次的元素。
- *
- * 说明：
- *
- * 你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
- *
- * 示例 1:
- *
- * 输入: [2,2,3,2]
- * 输出: 3
- * 示例 2:
- *
- * 输入: [0,1,0,1,0,1,99]
- * 输出: 99
- * */
+ * 260. 只出现一次的数字 III
+ 题目描述提示帮助提交记录社区讨论阅读解答
+ 给定一个整数数组 nums，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。
+
+ 示例 :
+
+ 输入: [1,2,1,3,2,5]
+ 输出: [3,5]
+ 注意：
+
+ 结果输出的顺序并不重要，对于上面的例子， [5, 3] 也是正确答案。
+ 你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？
+ * @author gkyan
+ */
 @SuppressWarnings("all")
 public class singleNumber_III {
-    //HashMap暴力解法
-    public static int singleNumber(int[] nums) {
-        Map<Integer,Integer> map=new HashMap<>();
+    //先res整个异或一边 得到两个数字的异或值 然后res&-res 找到最低有效位 然后根据最低有效位来将数组分成两部分 分别异或 得到答案
+    public int[] singleNumber(int[] nums) {
+        int res=0;
+        int arr[]=new int[2];
         for(int i=0;i<nums.length;i++){
-            Integer integer = map.get(nums[i]);
-            map.put(nums[i],integer==null?1:map.get(nums[i])+1);
+            res^=nums[i];
         }
-        for(Map.Entry entry : map.entrySet()){
-            if(entry.getValue().equals(1)){
-                return (int) entry.getKey();
-            }
+        //res返回的是那两个不同的数字的异或值
+        res&=-res;//找到的是最后一位的有效位
+        for(int i=0;i<nums.length;i++){
+            if((nums[i]&res)==0)//按照最低有效位是否为1来将数组分成两部分 然后分别异或
+                arr[0]^=nums[i];
+            else
+                arr[1]^=nums[i];
         }
-        return 0;
+        return arr;
     }
-    public static void main(String[] args) {
-        int []nums={2,2,2,3};
-        System.out.println(singleNumber(nums));
+    @Test
+    public void fun(){
+
+         System.out.println(4^5);
+         System.out.println(Integer.toBinaryString(1));
+         System.out.println(Integer.toBinaryString(-1));
+
     }
 }
