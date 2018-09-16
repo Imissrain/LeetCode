@@ -22,7 +22,7 @@ import java.util.Map;
  * 输出: 99
  * */
 @SuppressWarnings("all")
-public class singleNumber_II {
+public class singleNumber_III {
     //HashMap暴力解法
     public static int singleNumber(int[] nums) {
         Map<Integer,Integer> map=new HashMap<>();
