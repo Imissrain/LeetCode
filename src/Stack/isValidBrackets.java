@@ -1,9 +1,5 @@
-package Other;
+package Stack;
 
-import sun.applet.AppletClassLoader;
-import sun.misc.Launcher;
-
-import java.net.URLClassLoader;
 import java.util.Stack;
 
 /**
