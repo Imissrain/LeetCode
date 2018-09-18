@@ -49,31 +49,22 @@ package Greedy;
  */
 @SuppressWarnings("all")
 public class canCompleteCircuit {
+    //
     public static int canCompleteCircuit(int[] gas, int[] cost) {
+        int sum=0;
         int start=0;
-        int max=0;
+        int total=0;
         for(int i=0;i<gas.length;i++){
-            max=gas[i]-cost[i];
-            if(max>start){
-                start=i;
+            total+=gas[i]-cost[i];
+            sum+=gas[i]-cost[i];
+            if(sum<0){
+                start=i+1;
+                sum=0;
             }
         }
-        int total=0;
-        total+=gas[start];
-        int index=start;
-        int len=cost.length;
-        while(total>0){
-            total-=cost[index];
-            if(total<0)
-                return -1;
-            index++;
-            if(index==len)
-                index=(index)%len;
-            if(index==start)
-                return start;
-            total+=gas[index];
-        }
-        return -1;
+        if(total<0)
+            return -1;
+        return start;
     }
 
     public static void main(String[] args) {
