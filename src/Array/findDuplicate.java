@@ -26,7 +26,7 @@ import java.util.Map;
 @SuppressWarnings("all")
 public class findDuplicate {
     //hashmap暴力..
-    public int findDuplicate(int[] nums) {
+    public int findDuplicate1(int[] nums) {
         HashMap<Integer,Integer> map=new HashMap();
         for(int i=0;i<nums.length;i++){
             Integer val=map.get(nums[i]);
@@ -38,5 +38,44 @@ public class findDuplicate {
             }
         }
         return 0;
+    }
+
+    //二分
+    public static int findDuplicate2(int[] nums) {
+        int low=0;
+        int high=nums.length-1;
+        while(low<high){
+            int mid=low+(high-low)/2;
+            int cnt=0;
+            for(Integer integer:nums){
+                if(integer<=mid)
+                    cnt++;
+            }
+            if(cnt<=mid)
+                low=mid+1;
+            else
+                high=mid;
+        }
+        return low;
+    }
+
+    //双指针
+    public int findDuplicate3(int[] nums) {
+        int slow = 0, fast = 0, t = 0;
+        while (true) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if (slow == fast) break;
+        }
+        while (true) {
+            slow = nums[slow];
+            t = nums[t];
+            if (slow == t) break;
+        }
+        return slow;
+    }
+    public static void main(String[] args) {
+        int []arr={3,1,3,4,2};
+        System.out.println(findDuplicate2(arr));
     }
 }
