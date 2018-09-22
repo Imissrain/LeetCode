@@ -60,7 +60,7 @@ public class findDuplicate {
     }
 
     //双指针
-    public int findDuplicate3(int[] nums) {
+    public static int findDuplicate3(int[] nums) {
         int slow = 0, fast = 0, t = 0;
         while (true) {
             slow = nums[slow];
@@ -76,6 +76,6 @@ public class findDuplicate {
     }
     public static void main(String[] args) {
         int []arr={3,1,3,4,2};
-        System.out.println(findDuplicate2(arr));
+        System.out.println(findDuplicate3(arr));
     }
 }
