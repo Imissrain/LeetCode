@@ -30,6 +30,7 @@ public class preorderInorderBuildTree {
         TreeNode(int x) { val = x; }
     }
     //没咋看懂- -明天研究吧
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if(preorder.length==0 || inorder.length==0)
             return null;
