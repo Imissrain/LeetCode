@@ -41,7 +41,6 @@ public class kthSmallest {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
-
     public int kthSmallest(TreeNode root, int k) {
         return 0;
     }
