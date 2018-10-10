@@ -24,7 +24,7 @@ package Greedy;
 @SuppressWarnings("all")
 public class canJump {
     public static boolean canJump(int[] nums) {
-        //贪心策略 数组长度唯一返回true 声明一个跳跃步数值 每跳一次步数减一 nums[i+1]值大于当前pos时 更新pos=nums[i]+1 补偿消耗
+        //贪心策略 数组长度唯1返回true 声明一个跳跃步数值 每跳一次步数减一 nums[i+1]值大于当前pos时 更新pos=nums[i]+1 补偿消耗
         if(nums.length==1)
             return true;
         int len = nums.length-1;
