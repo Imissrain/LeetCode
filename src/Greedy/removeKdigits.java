@@ -33,7 +33,7 @@ public class removeKdigits {
     public static String removeKdigits(String num, int k) {
         //每次从头开始寻找下降点 然后从这里开始删除 注意0的判断和最后输出的时候要注意字符长度应该是数组长度减去删除的k
         if(num.length()==k)
-            return new String("0");
+            return "0";
         char[] chars = num.toCharArray();
         int index=k;
         while(k>0){
@@ -61,7 +61,7 @@ public class removeKdigits {
             }
         }
         if(flag)
-            return new String("0");
+            return "0";
         StringBuffer sb=new StringBuffer();
         for(int i=start;i<num.length()-index;i++){
             sb.append(chars[i]);
