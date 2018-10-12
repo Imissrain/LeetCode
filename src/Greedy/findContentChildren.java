@@ -57,7 +57,7 @@ public class findContentChildren {
         return ans;
     }
 
-    //错误版本 原因有待探究
+    //错误版本 i和j是没有关系的 这里 j=i 有点小毛病 i走i的 j走j的
     public int findContentChildren1(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);
