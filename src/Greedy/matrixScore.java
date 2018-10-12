@@ -30,6 +30,7 @@ package Greedy;
 public class matrixScore {
     //这个贪心思路就是 先保证最高位尽可能的大 把高位置1 然后判断每列 0的个数大于1的个数就reverse 最后计算二进制value要注意下标和指数对应关系
     public static int matrixScore(int[][] A) {
+
         for(int i=0;i<A.length;i++){
             if(A[i][0]==0)
                 reverse(A[i]);
