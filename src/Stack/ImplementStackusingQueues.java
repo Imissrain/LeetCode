@@ -19,11 +19,11 @@ import java.util.Set;
  你所使用的语言也许不支持队列。 你可以使用 list 或者 deque（双端队列）来模拟一个队列 , 只要是标准的队列操作即可。
  你可以假设所有操作都是有效的（例如, 对一个空的栈不会调用 pop 或者 top 操作）。
  */
-public class MyStack {
+public class ImplementStackusingQueues {
     //queue add进去之后  再依次将queue的poll添加到queue中去
     /** Initialize your data structure here. */
     Queue<Integer> queue=new LinkedList<>();
-    public MyStack() {
+    public ImplementStackusingQueues() {
 
     }
 
@@ -51,8 +51,8 @@ public class MyStack {
     }
 }
 /**
- * Your MyStack object will be instantiated and called as such:
- * MyStack obj = new MyStack();
+ * Your ImplementStackusingQueues object will be instantiated and called as such:
+ * ImplementStackusingQueues obj = new ImplementStackusingQueues();
  * obj.push(x);
  * int param_2 = obj.pop();
  * int param_3 = obj.top();
