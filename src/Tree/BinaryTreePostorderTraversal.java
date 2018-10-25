@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
  输出: [3,2,1]
  */
 @SuppressWarnings("all")
-public class postorderTraversal {
+public class BinaryTreePostorderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
