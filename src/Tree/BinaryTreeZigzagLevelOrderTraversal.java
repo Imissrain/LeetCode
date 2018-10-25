@@ -25,7 +25,7 @@ import java.util.*;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class zigzagLevelOrder {
+public class BinaryTreeZigzagLevelOrderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
