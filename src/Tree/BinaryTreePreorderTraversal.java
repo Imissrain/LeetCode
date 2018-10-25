@@ -1,4 +1,4 @@
-package Stack;
+package Tree;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ import java.util.Stack;
  输出: [1,2,3]
  */
 @SuppressWarnings("all")
-public class preorderTraversal {
+public class BinaryTreePreorderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
