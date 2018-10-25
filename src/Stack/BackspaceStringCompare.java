@@ -72,6 +72,6 @@ public class BackspaceStringCompare {
     public static void main(String[] args) {
         String S="y#fo##f";
         String T="y#f#o##f";
-        System.out.println(new Stack.BackspaceStringCompare().backspaceCompare(S,T));
+        System.out.println(new BackspaceStringCompare().backspaceCompare(S,T));
     }
 }
