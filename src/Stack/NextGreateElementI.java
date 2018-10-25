@@ -31,7 +31,7 @@ import java.util.Stack;
  nums1和nums2 的数组大小都不超过1000。
  */
 @SuppressWarnings("all")
-public class nextGreaterElement {
+public class NextGreateElementI {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         //一定要读题读三遍 暴力找法On3 先二重循环找到相等元素之后 再进行循环找比他大的 期间用一个flag表示找到或者没找到 没找到的话 循环退出后将arr[i]设置为-1
         boolean flag=false;
@@ -70,6 +70,6 @@ public class nextGreaterElement {
     public static void main(String[] args) {
         int []nums1={4,1,2};
         int []nums2={1,3,4,2};
-        System.out.println(Arrays.toString(new nextGreaterElement().nextGreaterElement(nums1,nums2)));
+        System.out.println(Arrays.toString(new Stack.NextGreateElementI().nextGreaterElement(nums1,nums2)));
     }
 }
