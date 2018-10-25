@@ -1,6 +1,5 @@
 package Stack;
 
-import java.io.ObjectOutputStream;
 import java.util.Stack;
 
 /**
@@ -40,7 +39,7 @@ import java.util.Stack;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class backspaceCompare {
+public class BackspaceStringCompare {
     public boolean backspaceCompare(String S, String T) {
         //两个栈模拟 碰到#就pop 否则push 细节：pop的时候注意栈是否为空 push的时候注意判断是否是#
         Stack<Character> left=new Stack<>();
@@ -73,6 +72,6 @@ public class backspaceCompare {
     public static void main(String[] args) {
         String S="y#fo##f";
         String T="y#f#o##f";
-        System.out.println(new backspaceCompare().backspaceCompare(S,T));
+        System.out.println(new Stack.BackspaceStringCompare().backspaceCompare(S,T));
     }
 }
