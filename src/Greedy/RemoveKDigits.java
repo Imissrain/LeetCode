@@ -30,7 +30,7 @@ import java.util.Arrays;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class removeKdigits {
+public class RemoveKDigits {
     public static String removeKdigits(String num, int k) {
         //每次从头开始寻找下降点 然后从这里开始删除 注意0的判断和最后输出的时候要注意字符长度应该是数组长度减去删除的k
         if (num.length() == k)
