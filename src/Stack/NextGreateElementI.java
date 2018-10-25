@@ -70,6 +70,6 @@ public class NextGreateElementI {
     public static void main(String[] args) {
         int []nums1={4,1,2};
         int []nums2={1,3,4,2};
-        System.out.println(Arrays.toString(new Stack.NextGreateElementI().nextGreaterElement(nums1,nums2)));
+        System.out.println(Arrays.toString(new NextGreateElementI().nextGreaterElement(nums1,nums2)));
     }
 }
