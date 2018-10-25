@@ -13,7 +13,7 @@ import java.util.Stack;
  empty() -- 返回队列是否为空。
  示例:
 
- MyQueue queue = new MyQueue();
+ ImplementQueueusingStacks queue = new ImplementQueueusingStacks();
 
  queue.push(1);
  queue.push(2);
@@ -27,12 +27,12 @@ import java.util.Stack;
  假设所有操作都是有效的 （例如，一个空的队列不会调用 pop 或者 peek 操作）。
  */
 @SuppressWarnings("all")
-public class MyQueue {
+public class ImplementQueueusingStacks {
     //用两个栈来模拟队列 在进栈的时候进行处理 先将stack中的所有内容pop到说辅助栈中 然后将x加入辅助栈 再将辅助栈所有内容pop到stack中
     Stack<Integer> stack=new Stack<>();
     Stack<Integer> stack1=new Stack<>();
     /** Initialize your data structure here. */
-    public MyQueue() {
+    public ImplementQueueusingStacks() {
 
     }
 
@@ -63,8 +63,8 @@ public class MyQueue {
     }
 }
 /**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue obj = new MyQueue();
+ * Your ImplementQueueusingStacks object will be instantiated and called as such:
+ * ImplementQueueusingStacks obj = new ImplementQueueusingStacks();
  * obj.push(x);
  * int param_2 = obj.pop();
  * int param_3 = obj.peek();
