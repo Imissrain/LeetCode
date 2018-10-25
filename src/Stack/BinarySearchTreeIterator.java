@@ -14,7 +14,7 @@ import java.util.Stack;
  */
 
 @SuppressWarnings("all")
-public class BSTIterator {
+public class BinarySearchTreeIterator {
     public class TreeNode {
         int val;
         TreeNode left;
@@ -23,7 +23,7 @@ public class BSTIterator {
     }
     //因为是二叉搜索树 先将root的所有left入栈 越往下越小 然后next的时候 从栈中弹出 当弹出节点right不为空时 再将所有此节点的left入栈
     Stack<TreeNode> stack=null;
-    public BSTIterator(TreeNode root) {
+    public BinarySearchTreeIterator(TreeNode root) {
         stack=new Stack<>();
         while(root!=null){
             stack.push(root);
