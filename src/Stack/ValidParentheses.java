@@ -92,6 +92,6 @@ public class ValidParentheses {
         }
 
     public static void main(String[] args) {
-        System.out.println(Stack.ValidParentheses.class.getClassLoader());
+        System.out.println(ValidParentheses.class.getClassLoader());
     }
 }
