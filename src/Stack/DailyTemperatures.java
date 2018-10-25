@@ -14,7 +14,7 @@ import java.util.Arrays;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class dailyTemperatures {
+public class DailyTemperatures {
     //On3 超时
     public int[] dailyTemperatures1(int[] temperatures) {
         if(temperatures.length==0)
@@ -70,7 +70,7 @@ public class dailyTemperatures {
         return results;
     }
     public static void main(String[] args) {
-        int[] ints = new dailyTemperatures().dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73});
+        int[] ints = new DailyTemperatures().dailyTemperatures(new int[]{73, 74, 75, 71, 69, 72, 76, 73});
         System.out.println(Arrays.toString(ints));
     }
 }
