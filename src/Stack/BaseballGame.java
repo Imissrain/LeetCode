@@ -40,7 +40,7 @@ import java.util.Stack;
  第7轮：你可以得到9 + 5 = 14分。总数是27。
  */
 @SuppressWarnings("all")
-public class calPoints {
+public class BaseballGame {
     //根据题意 用栈模拟即可
     public int calPoints(String[] ops) {
         if(ops.length==0)
