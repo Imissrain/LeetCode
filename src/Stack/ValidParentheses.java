@@ -34,7 +34,7 @@ import java.util.Stack;
  * 输出: true
  * */
 @SuppressWarnings("all")
-public class isValidBrackets {
+public class ValidParentheses {
 
 //switch遇到左半部分压栈 遇到右半部分 pop比较 如果栈为空或者不相等 false 否则pop 继续比较 注意栈判空要放在前面 ||这东西会短路
     public static boolean isValid(String s) {
@@ -92,6 +92,6 @@ public class isValidBrackets {
         }
 
     public static void main(String[] args) {
-        System.out.println(isValidBrackets.class.getClassLoader());
+        System.out.println(Stack.ValidParentheses.class.getClassLoader());
     }
 }
