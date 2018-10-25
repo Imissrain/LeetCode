@@ -35,7 +35,7 @@ package Stack;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class scoreOfParentheses {
+public class ScoreofParentheses {
     //只要是()中包含的 我们就要乘2 两层就乘2的平方 以此类推 我们计算(的数量 当下一个不是(时判断和前一个是否构成一个() 然后(数量减1 这部分()的值乘2
     public int scoreOfParentheses(String S) {
         int ans=0;
