@@ -24,7 +24,7 @@ package Tree;
  * 	 5   4   7
  * */
 @SuppressWarnings("all")
-public class mergeTrees {
+public class MergeTwoBinaryTrees {
     public class TreeNode {
         int val;
         TreeNode left;
