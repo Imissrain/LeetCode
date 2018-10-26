@@ -22,7 +22,7 @@ package Tree;
  * 9   6 3   1
  * */
 @SuppressWarnings("all")
-public class invertTree {
+public class InvertBinaryTree {
     public class TreeNode {
         int val;
         TreeNode left;
