@@ -22,7 +22,7 @@ import java.util.List;
  * 第0层的平均值是 3,  第1层是 14.5, 第2层是 11. 因此返回 [3, 14.5, 11].
  * */
 @SuppressWarnings("all")
-public class averageOfLevels {
+public class AverageofLevelsinBinaryTree {
     public class TreeNode {
         int val;
         TreeNode left;
