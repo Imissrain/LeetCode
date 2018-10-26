@@ -22,14 +22,14 @@ package Tree;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class preorderInorderBuildTree {
+public class ConstructBinaryTreefromPreorderandInorderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
-    //没咋看懂- -明天研究吧
+    //递归
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if(preorder.length==0 || inorder.length==0)
