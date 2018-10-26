@@ -32,7 +32,8 @@ import java.util.*;
  * 输出: -1
  * 说明: 最小的值是 2, 但是不存在第二小的值。
  * */
-public class findSecondMinimumValue {
+@SuppressWarnings("all")
+public class SecondMinimumNodeInaBinaryTree {
 
     public class TreeNode {
         int val;
