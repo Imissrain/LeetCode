@@ -22,7 +22,7 @@ package Tree;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class inorderPostorderBuildTree {
+public class ConstructBinaryTreefroInorderanPostorderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
