@@ -36,7 +36,7 @@ import java.util.LinkedList;
  7
  * */
 @SuppressWarnings("all")
-public class findBottomLeftValue {
+public class FindBottomLeftTreeValue {
     public class TreeNode {
         int val;
         TreeNode left;
