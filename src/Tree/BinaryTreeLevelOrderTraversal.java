@@ -26,7 +26,7 @@ import java.util.Queue;
  * ]
  * */
 @SuppressWarnings("all")
-public class levelOrder {
+public class BinaryTreeLevelOrderTraversal {
     public class TreeNode {
         int val;
         TreeNode left;
