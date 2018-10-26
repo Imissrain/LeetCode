@@ -35,7 +35,7 @@ package Tree;
  * 每个节点的值只会为 0 或 1 。
  * */
 @SuppressWarnings("all")
-public class pruneTree {
+public class BinaryTreePruning {
     public class TreeNode {
         int val;
         TreeNode left;
