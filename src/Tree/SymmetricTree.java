@@ -20,7 +20,7 @@ package Tree;
  *    \   \
  *    3    3*/
 @SuppressWarnings("all")
-public class isSymmetric {
+public class SymmetricTree {
     public class TreeNode {
         int val;
         TreeNode left;
