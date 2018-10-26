@@ -20,7 +20,7 @@ package Tree;
  * 返回它的最小深度  2.
  * */
 @SuppressWarnings("all")
-public class minDepth {
+public class MinimumDepthofBinaryTree {
     public class TreeNode {
         int val;
         TreeNode left;
