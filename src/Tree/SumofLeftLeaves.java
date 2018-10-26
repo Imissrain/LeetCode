@@ -27,6 +27,7 @@ public class SumofLeftLeaves {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
+
     //递归
     public int sumOfLeftLeaves(TreeNode root) {
         if (root == null)
