@@ -39,7 +39,7 @@ import java.util.List;
  输出: false
  * */
 @SuppressWarnings("all")
-public class isSameTree {
+public class SameTree {
     public class TreeNode {
         int val;
         TreeNode left;
