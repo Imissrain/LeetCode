@@ -19,7 +19,7 @@ import java.util.List;
  *
  * 在这个二叉树中，有两个左叶子，分别是 9 和 15，所以返回 24
  * */
-public class sumOfLeftLeaves {
+public class SumofLeftLeaves {
     //难点在于左叶子节点的判断 当一个节点的左子树不为空 并且这个左子树的左右字数都为空即为叶子节点
     public class TreeNode {
         int val;
