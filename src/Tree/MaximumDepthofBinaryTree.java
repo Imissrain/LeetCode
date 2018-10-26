@@ -18,7 +18,7 @@ package Tree;
  * 返回它的最大深度 3 。
  * */
 @SuppressWarnings("all")
-public class maxDepth {
+public class MaximumDepthofBinaryTree {
     public class TreeNode {
       int val;
       TreeNode left;
