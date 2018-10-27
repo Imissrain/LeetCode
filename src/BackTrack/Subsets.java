@@ -28,7 +28,7 @@ import java.util.List;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class subsets {
+public class Subsets {
     //dfs 从0开始 申请一个标记数组 来确定当前index是否加入 然后dfs  因为ans是静态的 每次调用要clear
     public static List<List<Integer>> ans=new ArrayList<List<Integer>>();
     public static boolean[]v =new boolean[100];
