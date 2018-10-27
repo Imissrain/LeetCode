@@ -24,7 +24,7 @@ import java.util.List;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class permute {
+public class Permutations {
     //先将nums[0]加入到List<List<Integer>>中 然后从i=1开始 每次都建立一个新的临时tmpans 将nums[0]到nums[i]的值分别插入到每个List<List<Integer>>中
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> ans=new ArrayList<List<Integer>>();
