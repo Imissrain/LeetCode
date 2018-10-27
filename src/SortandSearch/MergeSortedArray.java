@@ -16,7 +16,7 @@ package SortandSearch;
  * 输出: [1,2,2,3,5,6]
  * */
 @SuppressWarnings("all")
-public class mergeArray {
+public class MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         //倒序归并思想
         int i=m;
