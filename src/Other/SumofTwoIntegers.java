@@ -7,7 +7,7 @@ package Other;
  * 示例：
  * 若 a = 1 ，b = 2，返回 3。*/
 @SuppressWarnings("all")
-public class getSum {
+public class SumofTwoIntegers {
     //异或是不进位的加法 只有两个对应位置都是1的时候才会进位  我们用&来模拟进位 因为要进位 所以<<1 然后重复处理进位问题
     public static int getSum(int a, int b) {
         if(b==0)
