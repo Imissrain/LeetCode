@@ -26,7 +26,7 @@ package Other;
  * 0 <= A[i][j] <= 1
  * */
 @SuppressWarnings("all")
-public class flipAndInvertImage {
+public class FlippinganImage {
     public int[][] flipAndInvertImage(int[][] A) {
         //逐行反转 然后替换值
         for(int i=0;i<A.length;i++){
