@@ -14,7 +14,7 @@ package Other;
  *      因为无论你拿走 1 块、2 块 还是 3 块石头，最后一块石头总是会被你的朋友拿走。
  * */
 @SuppressWarnings("all")
-public class canWinNim {
+public class NimGame {
     public boolean canWinNim(int n) {
         if(n<4)
             return true;
