@@ -9,7 +9,7 @@ package Other;
  * 0 ≤ x, y < 231.
  * */
 @SuppressWarnings("all")
-public class hammingDistance {
+public class HammingDistance {
     public int hammingDistance(int x, int y) {
         //
         //Integer.toBinaryString(x^y).replaceAll("0","").length();
