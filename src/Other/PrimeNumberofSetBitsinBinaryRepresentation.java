@@ -32,7 +32,7 @@ package Other;
  * R - L 的最大值为 10000。
  * */
 @SuppressWarnings("all")
-public class countPrimeSetBits {
+public class PrimeNumberofSetBitsinBinaryRepresentation {
     public static int countPrimeSetBits(int L, int R) {
         //判素 二进制中1 的个数 判断即可
         int ans=0;
