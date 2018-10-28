@@ -30,7 +30,7 @@ package Other;
  * 10的二进制数是: 1010
  * */
 @SuppressWarnings("all")
-public class hasAlternatingBits {
+public class BinaryNumberwithAlternatingBits {
     //转成二进制字符串然后前后相比
     public static boolean hasAlternatingBits(int n) {
         String binaryString = Integer.toBinaryString(n);
