@@ -16,7 +16,7 @@ package Other;
  * 输出: false
  * */
 @SuppressWarnings("all")
-public class judgeCircle {
+public class RobotReturntoOrigin {
     public static boolean judgeCircle(String moves) {
         if(moves==null)
             return true;
