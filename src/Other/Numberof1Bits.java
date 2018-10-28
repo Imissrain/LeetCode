@@ -9,7 +9,7 @@ package Other;
  * @ts 添加此问题并创建所有测试用例。
  * */
 @SuppressWarnings("all")
-public class hammingWeight {
+public class Numberof1Bits {
     public int hammingWeight(int n) {
         //Integer.bitCount(n)
 //        return Integer.bitCount(n);
