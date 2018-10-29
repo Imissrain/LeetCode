@@ -26,7 +26,7 @@ import java.util.ArrayList;
  * 'e' 是那个被添加的字母。
  * */
 @SuppressWarnings("all")
-public class findTheDifference {
+public class FindtheDifference {
     //桶思想 两个数组实现 找到值不等的下标
     public char findTheDifference(String s, String t) {
         int arr1[]=new int[26];
