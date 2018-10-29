@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * 要求：设计一个 TinyURL 的加密 encode 和解密 decode 的方法。你的加密和解密算法如何设计和运作是没有限制的，你只需要保证一个URL可以被加密成一个TinyURL，并且这个TinyURL可以用解密方法恢复成原本的URL。
  * */
-public class Codec {
+public class EncodeandDecodeTinyURL {
     //用一个Map来存储 放入url 同时i++ 取出的时候将短url替换成空串取出即可
     Map<Integer, String> map = new HashMap<>();
     int i=0;
