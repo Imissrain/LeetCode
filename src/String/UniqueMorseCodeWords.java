@@ -34,7 +34,7 @@ import java.util.*;
  * 每个单词 words[i]只包含小写字母。
  * */
 @SuppressWarnings("all")
-public class uniqueMorseRepresentations {
+public class UniqueMorseCodeWords {
     public int uniqueMorseRepresentations(String[] words) {
         if(words.length==0)
             return 0;
