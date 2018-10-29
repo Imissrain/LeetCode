@@ -23,7 +23,7 @@ import java.util.Map;
  J 中的字符不重复。
  * */
 @SuppressWarnings("all")
-public class numJewelsInStones {
+public class JewelsandStones {
     public int numJewelsInStones(String J, String S) {
         if(J==null || S==null)
             return 0;
