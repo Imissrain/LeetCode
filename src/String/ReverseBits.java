@@ -20,7 +20,7 @@ package String;
  * 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。根据这个假设，如果反转后的整数溢出，则返回 0。
  * */
 @SuppressWarnings("all")
-public class reverseInteger {
+public class ReverseBits {
     public int reverse(int x) {
         if(x==0)
             return x;
