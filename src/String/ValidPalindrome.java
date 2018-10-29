@@ -18,7 +18,7 @@ import java.util.Stack;
  * 输出: false、
  * */
 @SuppressWarnings("all")
-public class isPalindrome {
+public class ValidPalindrome {
     public static boolean isPalindrome(String s) {
         if(s==null ||s.length()==0)
             return true;
