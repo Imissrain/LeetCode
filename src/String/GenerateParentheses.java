@@ -1,7 +1,5 @@
 package String;
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +19,7 @@ import java.util.List;
  ]
  */
 @SuppressWarnings("all")
-public class generateParenthesis {
+public class GenerateParentheses {
     //递归咯
     public List<String> generateParenthesis(int n) {
         List<String> res=new ArrayList<>();
@@ -57,6 +55,6 @@ public class generateParenthesis {
 
     public static void main(String[] args) {
         int n=3;
-        System.out.println(new generateParenthesis().generateParenthesis(n));
+        System.out.println(new String.GenerateParentheses().generateParenthesis(n));
     }
 }
