@@ -19,7 +19,7 @@ import java.util.Map;
  * 输入的字符串包含 unicode 字符怎么办？你能能否调整你的解法来适应这种情况？
  * */
 @SuppressWarnings("all")
-public class isAnagram {
+public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if(s.length()!=t.length())
             return false;
