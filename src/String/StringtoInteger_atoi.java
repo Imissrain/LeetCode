@@ -46,7 +46,7 @@ import org.junit.Test;
  * 解释: 数字 "-91283472332" 超过 32 位有符号整数范围。
  *      因此返回 INT_MIN (−231) 。*/
 @SuppressWarnings("all")
-public class myAtoi {
+public class StringtoInteger_atoi {
     public static int myAtoi(String s) {
         String str = s.trim();//吃空格
         int res=0;
