@@ -16,7 +16,7 @@ import java.util.Map;
  * 返回 2.
  * */
 @SuppressWarnings("all")
-public class firstUniqChar {
+public class FirstUniqueCharacterinaString {
     public static int firstUniqChar(String s) {
        for(int i=0;i<s.length();i++){
            char tmp=s.charAt(i);
