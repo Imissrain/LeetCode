@@ -19,7 +19,7 @@ import java.util.List;
  * You may assume the input string will only contain letters of alphabet.
  * */
 
-public class findWords {
+public class KeyboardRow {
     public static String[] findWords(String[] words) {
         if(words.length == 0)
             return words;
