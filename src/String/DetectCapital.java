@@ -21,7 +21,7 @@ package String;
  * 输出: False
  * */
 @SuppressWarnings("all")
-public class detectCapitalUse {
+public class DetectCapital {
     public boolean detectCapitalUse(String word) {
         //统计大写的个数 如果个数等于字符长度  或者个数等于0  或者个数等于1并且首字符在AZ之间返回true
         if(word.length()==0)
