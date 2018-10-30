@@ -55,6 +55,6 @@ public class GenerateParentheses {
 
     public static void main(String[] args) {
         int n=3;
-        System.out.println(new String.GenerateParentheses().generateParenthesis(n));
+        System.out.println(new GenerateParentheses().generateParenthesis(n));
     }
 }
