@@ -33,7 +33,7 @@ import java.util.*;
  * 解释: 注意，要求返回第三大的数，是指第三大且唯一出现的数。
  * 存在两个值为2的数，它们都排第二。*/
 @SuppressWarnings("all")
-public class thirdMax {
+public class ThirdMaximumNumber {
     public static int thirdMax(int[] nums) {
         //map去重 然后获取keyset keyset存入列表 然后根据长度返回
         Map<Integer,Integer>map=new HashMap<>();
