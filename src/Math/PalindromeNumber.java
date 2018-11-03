@@ -23,7 +23,7 @@ package Math;
  * 你能不将整数转为字符串来解决这个问题吗？
  * */
 @SuppressWarnings("all")
-public class isPalindromeNumber {
+public class PalindromeNumber {
     public boolean isPalindrome(int x) {
         if(x<0)
             return false;
