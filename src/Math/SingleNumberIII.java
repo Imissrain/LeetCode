@@ -19,7 +19,7 @@ import java.util.Map;
  * 你的算法应该具有线性时间复杂度。你能否仅使用常数空间复杂度来实现？
  * */
 @SuppressWarnings("all")
-public class singleNumber {
+public class SingleNumberIII {
     public int[] singleNumber(int[] nums) {
         //hashmap暴力 这里用了Long来保存出现的次数 后面equals和1L比较
         Map<Integer,Long> map=new HashMap<>();
