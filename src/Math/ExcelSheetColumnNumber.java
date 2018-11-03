@@ -28,7 +28,7 @@ package Math;
  * 输出: 701
  * */
 @SuppressWarnings("all")
-public class titleToNumber {
+public class ExcelSheetColumnNumber {
     public static int titleToNumber(String s) {
         //找规律即可
         int val[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};
