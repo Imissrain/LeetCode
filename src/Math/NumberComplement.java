@@ -20,7 +20,7 @@ package Math;
  * 解释: 1的二进制表示为1（没有前导零位），其补数为0。所以你需要输出0。
  * */
 @SuppressWarnings("all")
-public class findComplement {
+public class NumberComplement {
     public static int findComplement(int num) {
         int res=0;
         int index=0;
