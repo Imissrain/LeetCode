@@ -48,7 +48,7 @@ import java.util.Map;
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  * */
 @SuppressWarnings("all")
-public class romanToInt {
+public class RomantoInteger {
     public int romanToInt(String s) {
         Map<Character,Integer> map=new HashMap<>();
         map.put('I',1);
