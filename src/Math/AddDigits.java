@@ -11,7 +11,7 @@ package Math;
  * 解释: 各位相加的过程为：3 + 8 = 11, 1 + 1 = 2。 由于 2 是一位数，所以返回 2。
  * */
 @SuppressWarnings("all")
-public class addDigits {
+public class AddDigits {
     public int addDigits(int num) {
         if(num<9)
             return num;
