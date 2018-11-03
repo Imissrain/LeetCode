@@ -8,7 +8,7 @@ package Math;
  * 当 num = 16 时 ，返回 true 。 当 num = 5时，返回 false。
  * */
 @SuppressWarnings("all")
-public class isPowerOfFour {
+public class PowerofFour {
     public static boolean isPowerOfFour(int num) {
         //如果一个数减1是3的倍数同时还是2的幂 则这个数字是4的幂
         if(num<0)
