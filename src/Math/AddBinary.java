@@ -16,7 +16,7 @@ package Math;
  * 输出: "10101"
  * */
 @SuppressWarnings("all")
-public class addBinary {
+public class AddBinary {
     public static String addBinary(String a, String b) {
         //直接专成数字会溢出 这里用stringbulider来模拟相加 carry来模拟进位  如果最后carry不为0 再给首部填充1
         StringBuilder stringBuilder=new StringBuilder();
