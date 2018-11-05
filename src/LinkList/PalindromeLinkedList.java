@@ -9,7 +9,7 @@ import java.util.Stack;
  * 进阶：
  * 你能在 O(n) 的时间和 O(1) 的额外空间中做到吗？*/
 @SuppressWarnings("all")
-public class isPalindromeLinkList {
+public class PalindromeLinkedList {
     public class ListNode {
         int val;
         ListNode next;
