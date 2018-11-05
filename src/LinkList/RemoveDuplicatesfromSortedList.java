@@ -17,7 +17,7 @@ import java.util.TreeSet;
  * 输出: 1->2->3
  * */
 @SuppressWarnings("all")
-public class deleteDuplicates {
+public class RemoveDuplicatesfromSortedList {
     public class ListNode {
         int val;
         ListNode next;
