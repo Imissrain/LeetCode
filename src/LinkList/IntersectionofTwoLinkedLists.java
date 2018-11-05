@@ -25,7 +25,7 @@ package LinkList;
  * 程序尽量满足 O(n) 时间复杂度，且仅用 O(1) 内存。
  * */
 @SuppressWarnings("all")
-public class getIntersectionNode {
+public class IntersectionofTwoLinkedLists {
     public class ListNode {
         int val;
         ListNode next;
