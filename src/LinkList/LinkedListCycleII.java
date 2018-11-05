@@ -13,7 +13,7 @@ import java.util.*;
  * 你是否可以不用额外空间解决此题？
  */
 @SuppressWarnings("all")
-public class detectCycle {
+public class LinkedListCycleII {
     public class ListNode {
         int val;
         ListNode next;
