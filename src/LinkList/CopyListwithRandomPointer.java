@@ -9,9 +9,6 @@ import java.util.Map;
 
 /**
  *
- New Playground
- Imissrain
-
  138. 复制带随机指针的链表
  题目描述提示帮助提交记录社区讨论阅读解答
  给定一个链表，每个节点包含一个额外增加的随机指针，该指针可以指向链表中的任何节点或空节点。
@@ -22,7 +19,7 @@ import java.util.Map;
 
  */
 @SuppressWarnings("all")
-public class copyRandomList {
+public class CopyListwithRandomPointer {
     class RandomListNode {
       int label;
       RandomListNode next, random;
