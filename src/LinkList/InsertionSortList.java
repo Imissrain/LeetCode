@@ -35,6 +35,7 @@ public class InsertionSortList {
         ListNode(int x) { val = x; }
     }
     //冒泡思想 投机取巧 美滋滋
+
     public ListNode insertionSortList(ListNode head) {
         if(head==null || head.next==null)
             return head;
