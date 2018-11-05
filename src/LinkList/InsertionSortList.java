@@ -28,7 +28,7 @@ package LinkList;
  * 输出: -1->0->3->4->5
  */
 @SuppressWarnings("all")
-public class insertionSortList {
+public class InsertionSortList {
     public class ListNode {
         int val;
         ListNode next;
