@@ -7,7 +7,7 @@ package LinkList;
  * 你能否不使用额外空间解决此题？
  * */
 @SuppressWarnings("all")
-public class hasCycle {
+public class LinkedListCycle {
     public class ListNode {
         int val;
         ListNode next;
