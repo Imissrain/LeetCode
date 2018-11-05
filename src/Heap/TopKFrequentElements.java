@@ -18,7 +18,7 @@ import java.util.*;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class topKFrequent {
+public class TopKFrequentElements {
     //先treemap 去重算出频率 然后用优先队列(即小顶堆) 进行判断 每次的key的value 大于根顶元素 就删除根顶元素然后 添加key  这里重写了compareaTo 创建优先队列如果不指定排序规则 默认的是排序key 因此我们要指定根据其value来排序 所以在构造方法中要声明排序规则
     public List<Integer> topKFrequent(int[] nums, int k) {
        TreeMap <Integer,Integer> map=new TreeMap<>();
@@ -49,6 +49,6 @@ public class topKFrequent {
     public static void main(String[] args) {
         int nums[]={7,8,78,6,56,6,1,1,1,1,2,2,2,3,4,4,4,4,4,4,4,1,2,4,5,7,7,7,7,7,7,9,7,45};
         int k=5;
-        System.out.println(new topKFrequent().topKFrequent(nums,k));
+        System.out.println(new TopKFrequentElements().topKFrequent(nums,k));
     }
 }
