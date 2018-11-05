@@ -20,7 +20,7 @@ package LinkList;
  * 1-2-3-7-8-11-12-9-10-4-5-6-NULL
  */
 @SuppressWarnings("all")
-public class flatten {
+public class FlattenaMultilevelDoublyLinkedList {
     class Node {
         public int val;
         public Node prev;
