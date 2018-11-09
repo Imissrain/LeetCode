@@ -20,7 +20,8 @@ import java.util.Date;
  * 输出: 1->2->2->4->3->5
  * */
 @SuppressWarnings("all")
-public class partition {
+
+public class PartitionList {
     public class ListNode {
         int val;
         ListNode next;
