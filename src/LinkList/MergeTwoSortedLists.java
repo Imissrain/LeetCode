@@ -9,7 +9,8 @@ package LinkList;
  * 输出：1->1->2->3->4->4
  * */
 @SuppressWarnings("all")
-public class mergeTwoLists {
+
+public class MergeTwoSortedLists {
     public class ListNode {
         int val;
         ListNode next;
