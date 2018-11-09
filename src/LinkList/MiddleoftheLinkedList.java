@@ -23,7 +23,8 @@ package LinkList;
  * 由于该列表有两个中间结点，值分别为 3 和 4，我们返回第二个结点。
  */
 @SuppressWarnings("all")
-public class middleNode {
+
+public class MiddleoftheLinkedList {
     public class ListNode {
         int val;
         ListNode next;
