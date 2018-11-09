@@ -10,7 +10,8 @@ package LinkList;
  * 输出: 1->2->3->4->5
  * */
 @SuppressWarnings("all")
-public class removeElements {
+
+public class RemoveLinkedListElements {
     public class ListNode {
         int val;
         ListNode next;
