@@ -36,7 +36,8 @@ import java.util.Set;
  * G is a subset of all values in the linked list.
  */
 @SuppressWarnings("all")
-public class numComponents {
+
+public class LinkedListComponents {
     public class ListNode {
         int val;
         ListNode next;
