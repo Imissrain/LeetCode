@@ -21,7 +21,8 @@ import java.util.*;
  * 输出: 1->1->2->3->4->4->5->6
  * */
 @SuppressWarnings("all")
-public class mergeKLists {
+
+public class MergekSortedLists {
     public class ListNode {
         int val;
         ListNode next;
