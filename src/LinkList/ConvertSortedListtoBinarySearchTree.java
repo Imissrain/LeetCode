@@ -25,7 +25,8 @@ import java.util.*;
  *  -10  5
  */
 @SuppressWarnings("all")
-public class sortedListToBST {
+
+public class ConvertSortedListtoBinarySearchTree {
     public class ListNode {
         int val;
         ListNode next;
