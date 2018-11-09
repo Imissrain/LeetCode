@@ -26,7 +26,8 @@ import java.io.InputStreamReader;
  * 链表的第一个节点视为奇数节点，第二个节点视为偶数节点，以此类推。
  * */
 @SuppressWarnings("all")
-public class oddEvenList {
+
+public class OddEvenLinkedList {
     public static class ListNode {
         int val;
         ListNode next;
@@ -115,7 +116,7 @@ public class oddEvenList {
         while ((line = in.readLine()) != null) {
             ListNode head = stringToListNode(line);
 
-            ListNode ret = new oddEvenList().oddEvenList(head);
+            ListNode ret = new OddEvenLinkedList().oddEvenList(head);
 
             String out = listNodeToString(ret);
 
