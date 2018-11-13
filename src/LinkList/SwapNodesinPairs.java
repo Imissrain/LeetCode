@@ -24,6 +24,7 @@ public class SwapNodesinPairs {
         ListNode(int x) { val = x; }
     }
     public ListNode swapPairs(ListNode head) {
+
         //交换两个相临节点 first.next=second.next current.next=second current.next.next=first current向前走两步
       if(head==null ||head.next==null)
           return head;
