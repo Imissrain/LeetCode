@@ -30,7 +30,8 @@ import java.util.Stack;
  * 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
  * */
 @SuppressWarnings("all")
-public class reverseKGroup {
+
+public class ReverseNodesinkGroup {
     public class ListNode {
         int val;
         ListNode next;
