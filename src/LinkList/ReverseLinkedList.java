@@ -16,7 +16,8 @@ import java.util.Stack;
  * 你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
  * */
 @SuppressWarnings("all")
-public class reverseList {
+
+public class ReverseLinkedList {
     public class ListNode {
         int val;
         ListNode next;
