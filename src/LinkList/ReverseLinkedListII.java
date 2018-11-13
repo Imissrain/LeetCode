@@ -23,7 +23,8 @@ import java.util.Stack;
  * 输出: 1->4->3->2->5->NULL
  * */
 @SuppressWarnings("all")
-public class reverseBetween {
+
+public class ReverseLinkedListII {
     public class ListNode {
         int val;
         ListNode next;
