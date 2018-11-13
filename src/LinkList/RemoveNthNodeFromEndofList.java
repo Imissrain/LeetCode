@@ -13,7 +13,8 @@ package LinkList;
  * 给定的 n 保证是有效的。
  * */
 @SuppressWarnings("all")
-public class removeNthFromEnd {
+
+public class RemoveNthNodeFromEndofList {
     public class ListNode {
         int val;
         ListNode next;
