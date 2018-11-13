@@ -24,7 +24,8 @@ import jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
  * 向右旋转 3 步: 0->1->2->NULL
  * 向右旋转 4 步: 2->0->1->NULL
  * */
-public class rotateRight {
+
+public class RotateList {
     public class ListNode {
         int val;
         ListNode next;
