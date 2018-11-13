@@ -12,7 +12,8 @@ package LinkList;
  * 例1-> 2-> 3-> 4，k = 5 // 5等份[[1]，[2]，[3]，[4]，null]
  * */
 @SuppressWarnings("all")
-public class splitListToParts {
+
+public class SplitLinkedListinParts {
     public class ListNode {
         int val;
         ListNode next;
