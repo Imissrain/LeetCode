@@ -48,7 +48,7 @@ package Greedy;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class canCompleteCircuit {
+public class GasStation {
     //
     public static int canCompleteCircuit(int[] gas, int[] cost) {
         int sum=0;
