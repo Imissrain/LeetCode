@@ -22,7 +22,7 @@ package Greedy;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class canJump {
+public class JumpGame {
     public static boolean canJump(int[] nums) {
         //贪心策略 数组长度唯1返回true 声明一个跳跃步数值 每跳一次步数减一 nums[i+1]值大于当前pos时 更新pos=nums[i]+1 补偿消耗
         if(nums.length==1)
