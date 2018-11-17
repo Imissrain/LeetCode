@@ -45,7 +45,7 @@ import org.junit.Test;
 
  * */
 @SuppressWarnings("all")
-public class lemonadeChange {
+public class LemonadeChange {
     public static boolean lemonadeChange(int[] bills) {
         //看图识话
         int five=0;
