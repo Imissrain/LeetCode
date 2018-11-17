@@ -28,7 +28,7 @@ package Greedy;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class matrixScore {
+public class ScoreAfterFlippingMatrix {
     //这个贪心思路就是 先保证最高位尽可能的大 把高位置1 然后判断每列 0的个数大于1的个数就reverse 最后计算二进制value要注意下标和指数对应关系
     public static int matrixScore(int[][] A) {
 
@@ -103,6 +103,6 @@ public class matrixScore {
 
     public static void main(String[] args) {
         int[][] A = {{0, 0, 1, 1}, {1, 0, 1, 0}, {1, 1, 0, 0}};
-        System.out.println(new matrixScore().matrixScore(A));
+        System.out.println(new ScoreAfterFlippingMatrix().matrixScore(A));
     }
 }
