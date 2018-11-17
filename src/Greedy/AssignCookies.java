@@ -36,7 +36,7 @@ import java.util.Arrays;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class findContentChildren {
+public class AssignCookies {
 
     //都进行排序 然后再s中找一个大于小于g中的元素即可
     public int findContentChildren(int[] g, int[] s) {
