@@ -24,13 +24,15 @@ import java.util.TreeMap;
  * @author gkyan
  */
 @SuppressWarnings("all")
-public class rob {
+public class HouseRobber {
     //刚开始绕弯了  dp下一个对应位置的值要么是前一个值 要么是前一个的前一个加上当前 从i=2开始循环
     public static int rob(int[] nums) {
-        if(nums.length==0)
+        if(nums.length==0) {
             return 0;
-        if(nums.length==1)
+        }
+        if(nums.length==1) {
             return nums[0];
+        }
         int ans=0;
         int dp[]=new int[nums.length];
         dp[0]=nums[0];
