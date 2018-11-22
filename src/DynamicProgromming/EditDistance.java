@@ -29,7 +29,7 @@ package DynamicProgromming;
  * exection -> execution (插入 'u')
  * */
 @SuppressWarnings("all")
-public class minDistance {
+public class EditDistance {
     public static int minDistance(String word1, String word2) {
         //dp[i][j]代表第一个字符串从0带i  到第二个字符串从0到j  形成的子串的编辑距离 相等的话无需操作 不等的话 插入:dp[i][j-1]+1 替换:dp[i-1][j-1]+1 删除:dp[i-1][j]+1 取最小值
         if(word1.length()==0)
