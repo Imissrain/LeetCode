@@ -18,7 +18,7 @@ import java.util.List;
  * 你能进一步完善解法吗？ 在c ++或任何其他语言中不使用任何内置函数（如c++里的 __builtin_popcount）来执行此操作。
  * */
 @SuppressWarnings("all")
-public class countBits {
+public class CountingBits {
     //n&=(n-1) 计算有多少个二进制1  n&(n-1)作用：将n的二进制表示中的最低位为1的改为0 看能进行几次这样的操作 就有几个1
 
     public int[] countBits(int num) {
