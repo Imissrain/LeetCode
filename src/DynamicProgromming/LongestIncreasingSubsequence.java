@@ -19,7 +19,7 @@ import java.util.Arrays;
  * 进阶: 你能将算法的时间复杂度降低到 O(n log n) 吗?
  * */
 @SuppressWarnings("all")
-public class lengthOfLIS {
+public class LongestIncreasingSubsequence {
     //申请一个巨大的一维数组 来记录当前位置的最大的上升长度，当后一个位置的值大于前一个位置的值并且最终位置的dp大于当前位置 更新当前位置的dp 最后遍历找最大值
     public static int lengthOfLIS(int[] nums) {
         if(nums.length==0)
