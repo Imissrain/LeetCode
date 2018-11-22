@@ -21,7 +21,7 @@ import java.util.Arrays;
  * 解释: 因为路径 1→3→1→1→1 的总和最小。
  * */
 @SuppressWarnings("all")
-public class minPathSum {
+public class MinimumPathSum {
     public static int minPathSum(int[][] grid) {
         //根据 i j取值的不同 判断 ij都大于0时 等于上方和左方的最小值
         for(int i=0;i<grid.length;i++){
