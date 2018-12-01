@@ -2,7 +2,6 @@ package Array;
 
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * 287. 寻找重复数
  * 题目描述提示帮助提交记录社区讨论阅读解答
@@ -24,7 +23,7 @@ import java.util.Map;
  * 数组中只有一个重复的数字，但它可能不止重复出现一次。
  * */
 @SuppressWarnings("all")
-public class findDuplicate {
+public class FindtheDuplicateNumber {
     //hashmap暴力..
     public int findDuplicate1(int[] nums) {
         HashMap<Integer,Integer> map=new HashMap();
