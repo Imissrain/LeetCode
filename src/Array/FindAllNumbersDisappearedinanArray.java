@@ -22,11 +22,13 @@ import java.util.List;
  * [5,6]
  */
 @SuppressWarnings("all")
-public class findDisappearedNumbers {
+
+public class FindAllNumbersDisappearedinanArray {
     public static List<Integer> findDisappearedNumbers(int[] nums) {
         //桶思想 先填满数组 然后找为0的下标返回
-        if(nums.length==0)
+        if(nums.length==0) {
             return new ArrayList<>();
+        }
         List<Integer>list=new ArrayList<>();
         int max=nums.length;
         int []arr=new int[max+1];
