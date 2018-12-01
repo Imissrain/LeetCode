@@ -15,7 +15,7 @@ package Array;
  * 输入数组的长度是正整数，且不超过 10,000。
  * */
 @SuppressWarnings("all")
-public class findMaxConsecutiveOnes {
+public class MaxConsecutiveOnes {
     public static int findMaxConsecutiveOnes(int[] nums) {
       //count记录1的个数 碰到0清零重新计数每次循环更新ans  ans等于count和ans中的最大值
         int count=0;
