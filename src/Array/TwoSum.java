@@ -17,9 +17,9 @@ import java.util.Map;
  * 因为 nums[0] + nums[1] = 2 + 7 = 9
  * 所以返回 [0, 1]*/
 @SuppressWarnings("all")
-public class twoSum {
+public class TwoSum {
     //这是我想的
-    //    public int[] twoSum(int[] nums, int target) {
+    //    public int[] TwoSum(int[] nums, int target) {
 //        int result[]=new int[2];
 //        if(nums.length==0){
 //            result[0]=-1;
