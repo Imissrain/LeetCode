@@ -47,6 +47,7 @@ public class ValidateBinarySearchTree {
         return isValidBST(root,null,null);
     }
 
+
     private boolean isValidBST(TreeNode root, TreeNode min, TreeNode max) {
         if(root==null)
             return true;
