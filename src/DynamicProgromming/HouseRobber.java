@@ -25,7 +25,7 @@ import java.util.TreeMap;
  */
 @SuppressWarnings("all")
 public class HouseRobber {
-    //刚开始绕弯了  dp下一个对应位置的值要么是前一个值 要么是前一个的前一个加上当前 从i=2开始循环
+    //刚开始绕弯了  dp下一个对应位置的值要么是前一个的值 要么是前两个的值加上当前值 从i=2开始循环
     public static int rob(int[] nums) {
         if(nums.length==0) {
             return 0;
@@ -33,7 +33,6 @@ public class HouseRobber {
         if(nums.length==1) {
             return nums[0];
         }
-        int ans=0;
         int dp[]=new int[nums.length];
         dp[0]=nums[0];
         dp[1]=Math.max(nums[0],nums[1]);
