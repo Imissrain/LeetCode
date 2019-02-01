@@ -17,7 +17,7 @@ import java.util.HashSet;
  * 我们可以不考虑输出结果的顺序。
  * */
 @SuppressWarnings("all")
-public class intersection {
+public class IntersectionoTwoArrays {
     //考虑到HashSet可以去重 先存入set1 去重之后 看是否存在nums2的值再存入set2 转成数组返回
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> num1=new HashSet<>();
