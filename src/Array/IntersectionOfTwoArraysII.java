@@ -19,7 +19,7 @@ import java.util.*;
  * 如果nums2的元素存储在磁盘上，内存是有限的，你不能一次加载所有的元素到内存中，你该怎么办？
  * */
 @SuppressWarnings("all")
-public class IntersectionOfTwoArrays {
+public class IntersectionOfTwoArraysII {
     public static int[] intersect(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);//排序
         Arrays.sort(nums2);
