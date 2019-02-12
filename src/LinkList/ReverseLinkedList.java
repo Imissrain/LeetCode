@@ -52,4 +52,19 @@ public class ReverseLinkedList {
         }
         return tmp;//注意这里一定是从头返回
     }
+
+    //原地反转
+    public ListNode reverseList2(ListNode head){
+        if(head==null||head.next==null)
+            return head;
+        ListNode first=head;
+        ListNode reverse=null;
+        while (first!=null){
+            ListNode second=first.next;//创建后继节点 存储first的后继
+            first.next=reverse;//往回指
+            reverse=first;//继续向前
+            first=second;//继续向前直到first为null
+        }
+        return reverse;
+    }
 }
