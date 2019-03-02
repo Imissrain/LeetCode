@@ -36,7 +36,7 @@ package Array;
  * 输出: false
  */
 /*
-    先找到区间 然后在区间中进行二分
+    先和每行最后一个元素相比找到对应区间 然后在区间中进行二分
  */
 public class Searcha2DMatrix {
     public boolean searchMatrix(int[][] matrix, int target) {
