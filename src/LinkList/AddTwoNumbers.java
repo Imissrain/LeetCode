@@ -131,8 +131,41 @@ public class AddTwoNumbers {
         }
         return res.next;
     }
-    @Test
-    public void fun(){
 
+    /*
+       比暴力快不了多少 内存占用也是相差无几 但是直接算还是简单一些
+     */
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
+        //判空
+        if(l1==null&&l2!=null)
+            return l2;
+        if(l1!=null&&l2==null)
+            return l1;
+        //声明一个dummyHead节点
+        ListNode dummyHead=new ListNode(0);
+        //获取l1 l2      声明个cur指向dumyHead
+        ListNode p=l1,q=l2,cur=dummyHead;
+        //进位标志为0
+        int carry=0;
+        //当两个链表任何一个都没加完时循环
+        while(p!=null || q!=null){
+            //p不为空获取p的val
+            int x=(p!=null)?p.val:0;
+            //q不为空获取q的val
+            int y=(q!=null)?q.val:0;
+            //上面的值加上进位的carry
+            int sum=x+y+carry;
+            //进位等于和除10
+            carry=sum/10;
+            //cur的next等于sum%10
+            cur.next=new ListNode(sum%10);
+            //各向前走一步
+            cur=cur.next;
+            if(p!=null) p=p.next;
+            if(q!=null) q=q.next;
+        }
+        //c进位大于0 在创建一个节点
+        if(carry>0) cur.next=new ListNode(carry);
+        return dummyHead.next;
     }
 }
