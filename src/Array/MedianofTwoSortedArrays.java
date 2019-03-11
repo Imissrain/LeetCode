@@ -23,7 +23,7 @@ package Array;
  */
 @SuppressWarnings("all")
 /*
-    倒序归并 然后在数组里求中位数即可
+    倒序归并 然后在数组里求中位数即可 记得求中位数要除2.0 否则会当成int返回
  */
 public class MedianofTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
