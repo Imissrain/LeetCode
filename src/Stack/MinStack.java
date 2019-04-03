@@ -56,10 +56,7 @@ public class MinStack {
         if(minStack.isEmpty()==false){
             if(pop<minStack.peek())
                 min=minStack.peek();
-        }else {
-            min=pop;
         }
-
     }
 
     public int top() {
