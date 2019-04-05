@@ -33,8 +33,6 @@ import java.util.Arrays;
 public class FindFirstandLastPositionofElementinSortedArray {
 
     public int[] searchRange(int[] nums, int target) {
-        if(target>nums.length)
-            return new int[]{-1,-1};
         int[] ans=new int[2];
         int search = BinarySearch(nums, target);
         if(search==-1){
@@ -75,7 +73,9 @@ public class FindFirstandLastPositionofElementinSortedArray {
     }
 
     public static void main(String[] args) {
-        int []nums={1};
-        System.out.println(Arrays.toString(new FindFirstandLastPositionofElementinSortedArray().searchRange(nums,1)));
+        int []nums={3};
+        System.out.println(Arrays.toString(new FindFirstandLastPositionofElementinSortedArray().searchRange(nums,3)));
+        int[] search = new FindFirstandLastPositionofElementinSortedArray().searchRange(nums, 3);
+        System.out.println(search[1]-search[0]+1);
     }
 }
