@@ -20,8 +20,9 @@ import org.junit.Test;
 @SuppressWarnings("all")
 /*
     res=0 首先先逐个异或一遍 这个时候res是那两个数字的异或结果 既然两个数字不同
-    那么肯定至少有一位为1 res&=-res 这个操作可以找到最低的那个有效位1 根据这个将原数组分为两部分
-    再分别异或 就可以找到两个数字
+    那么肯定至少有一位为1 res&=-res 这个操作可以找到最低的那个有效位1的index
+    因为既然可以得到这个异或的1 那就说明这两个不同的数字 一个对应index为1 另一个不为1
+     根据这个位置 将原数组分为两部分  再分别异或 就可以找到两个数字
  */
 public class singleNumber_III {
     //先res整个异或一边 得到两个数字的异或值 然后res&-res 找到最低有效位 然后根据最低有效位来将数组分成两部分 分别异或 得到答案
@@ -44,7 +45,7 @@ public class singleNumber_III {
     @Test
     public void fun(){
         int res=3^5;
-        System.out.println(Integer.toBinaryString(6));
+        System.out.println(Integer.toBinaryString(8&-8));
         System.out.println(Integer.toBinaryString(-6));
     }
 }
